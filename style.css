@@ -125,6 +125,7 @@ header.shadow {
   width: 100%;
   opacity: 0.5;
   filter: contrast(2);
+  background-image: url(caro_img_3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   animation: 10s moveBg ease-in-out infinite;
@@ -141,18 +142,6 @@ header.shadow {
   width: 100%;
   z-index: 1;
   background: linear-gradient(90deg, #000000aa, rgb(0 0 0 /0%));
-}
-
-.hero-image img {
-  width: 100%;
-  object-fit: cover;
-  opacity: 0;
-}
-
-.carousel {
-  position: absolute;
-  transform: translateX(0);
-  display: flex;
 }
 
 .hero-text {
