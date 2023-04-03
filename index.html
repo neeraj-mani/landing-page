@@ -1,128 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechnoMind.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechnoMind. </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-</head>
-
-<body class="active">
+  <body class="active">
     <header>
-        <a href="#" class="logo">Techno <span>Mind</span>.</a>
+      <a href="#" class="logo">Techno <span>Mind</span>.</a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-        <ul class="navbar">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#signup">Sign Up</a></li>
-        </ul>
+      <ul class="navbar">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+      </ul>
     </header>
     <section class="hero" id="hero">
-        <div class="hero-text-container">
-            <h2 class="hero-text">Code your way to success with us!</h2>
-            <p class="hero-subtext">Unlock your coding potential with us! Our expertly crafted courses and user-friendly
-                platform make coding easy for everyone.</p>
-            <a href="#signup" class="btn btn-rounded">Start your Journey with us</a>
-        </div>
-        <img src="hero-section.webp" alt="" class="hero-image">
+      <div class="hero-text-container">
+        <h2 class="hero-text">Code your way to success with us!</h2>
+        <p class="hero-subtext">
+          Unlock your coding potential with us! Our expertly crafted courses and
+          user-friendly platform make coding easy for everyone.
+        </p>
+        <a href="#signup" class="btn btn-rounded">Start your Journey with us</a>
+      </div>
+      <img src="hero-section.webp" alt="" class="hero-image" />
     </section>
 
     <section class="courses" id="courses">
-        <div class="heading">
-            <h2>Courses</h2>
+      <div class="heading">
+        <h2>Courses</h2>
+      </div>
+      <div class="courses-container container animate">
+        <div class="course-card">
+          <img src="frontend.webp" alt="" class="course-img" />
+          <h3 class="course-name">Frontend Web Development</h3>
+          <p class="course-description">
+            Design dynamic and responsive user interfaces with our front-end web
+            development course.
+          </p>
         </div>
-        <div class="courses-container">
-            <div class="course-card">
-                <img src="frontend.webp" alt="" class="course-img">
-                <h3 class="course-name">Frontend Web Development</h3>
-                <p class="course-description">
-                    Design dynamic and responsive user interfaces with our front-end web development course.</p>
-            </div>
-            <div class="course-card">
-                <img src="backend.jpg" alt="" class="course-img">
-                <h3 class="course-name">Backend Web Development</h3>
-                <p class="course-description">Learn to build robust and scalable web applications using popular
-                    programming languages such as Python, Ruby, and Node.js.</p>
-            </div>
-            <div class="course-card">
-                <img src="full-stack-web-development.jpg" alt="" class="course-img">
-                <h3 class="course-name">FullStack Web Development</h3>
-                <p class="course-description">Build complete end to end web applications with our full-stack web
-                    development course.</p>
-            </div>
+        <div class="course-card">
+          <img src="backend.jpg" alt="" class="course-img" />
+          <h3 class="course-name">Backend Web Development</h3>
+          <p class="course-description">
+            Learn to build robust and scalable web applications using popular
+            programming languages such as Python, Ruby, and Node.js.
+          </p>
         </div>
+        <div class="course-card">
+          <img src="full-stack-web-development.jpg" alt="" class="course-img" />
+          <h3 class="course-name">FullStack Web Development</h3>
+          <p class="course-description">
+            Build complete end to end web applications with our full-stack web
+            development course.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="pricing" id="pricing">
-        <div class="heading">
-            <h2>Pricing</h2>
-        </div>
+      <div class="heading">
+        <h2>Pricing</h2>
+      </div>
 
-        <div class="pricing-container">
-            <div class="pricing-card card-selected">
-                <h3 class="course">Frontend</h3>
-                <h4 class="price">₹10,000</h4>
-                <ul>
-                    <li>Javascript</li>
-                    <li>React.js</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-                <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-            <div class="pricing-card">
-                <h3 class="course">Backend</h3>
-                <h4 class="price">₹15,000</h4>
-                <ul>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                </ul>
-                <a href="#" class="btn-buy">Buy Now</a>
-            </div>
-            <div class="pricing-card">
-                <h3 class="course">FullStack</h3>
-                <h4 class="price">₹23,000</h4>
-                <ul>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                </ul>
-                <a href="#" class="btn-buy">Buy Now</a>
-            </div>
+      <div class="pricing-container container animate">
+        <div class="pricing-card card-selected">
+          <h3 class="course">Frontend</h3>
+          <h4 class="price">₹10,000</h4>
+          <ul>
+            <li>Javascript</li>
+            <li>React.js</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <a href="#pricing" class="btn-buy">Buy Now</a>
         </div>
+        <div class="pricing-card">
+          <h3 class="course">Backend</h3>
+          <h4 class="price">₹15,000</h4>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+          </ul>
+          <a href="#pricing" class="btn-buy">Buy Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3 class="course">FullStack</h3>
+          <h4 class="price">₹23,000</h4>
+          <ul>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+          </ul>
+          <a href="#pricing" class="btn-buy">Buy Now</a>
+        </div>
+      </div>
     </section>
     <section class="signup" id="signup">
-        <div class="heading">
-            <h2>Sign Up</h2>
-            <span>Connect With Us</span>
-        </div>
-        <div class="signup-container">
-            <form class="signup-form">
-                <input type="email" class="email" placeholder="Email" name="" id="" required>
-                <input type="text" class="fullName" placeholder="Full Name" required>
-                <input type="password" class="pass" placeholder="Password" name="" id="" required>
-                <button class="btn">Sign Up</button>
-            </form>
-        </div>
+      <div class="heading">
+        <h2>Sign Up</h2>
+        <span>Connect With Us</span>
+      </div>
+      <div class="signup-container container animate">
+        <form class="signup-form">
+          <i class="bx bx-envelope"></i>
+          <input
+            type="email"
+            class="email"
+            placeholder="Email"
+            name=""
+            id=""
+            required
+          />
+          <i class="bx bx-user"></i>
+          <input
+            type="text"
+            class="fullName"
+            placeholder="Full Name"
+            required
+          />
+          <i class="bx bx-lock"></i>
+          <input
+            type="password"
+            class="pass"
+            placeholder="Password"
+            name=""
+            id=""
+            required
+          />
+          <div class="eye">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3 1.641 0 3-1.358 3-3 0-1.641-1.359-3-3-3z"
+              ></path>
+              <path
+                d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5-.504 1.158-2.578 5-7.926 5z"
+              ></path>
+            </svg>
+          </div>
+          <button class="btn">Sign Up</button>
+        </form>
+      </div>
     </section>
-    <div class="footer">
-
-    </div>
+    <div class="footer"></div>
 
     <div class="copyright">
-        © TechnoMind. | All Right Reserved.</p>
+      <svg
+        width="100%"
+        height="100%"
+        id="svg"
+        viewBox="0 0 1440 390"
+        xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150"
+      >
+        <style>
+          .path-0 {
+            animation: pathAnim-0 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+          }
+          @keyframes pathAnim-0 {
+            0% {
+              d: path(
+                "M 0,400 C 0,400 0,200 0,200 C 139.7333333333333,178.13333333333333 279.4666666666666,156.26666666666668 430,170 C 580.5333333333334,183.73333333333332 741.8666666666668,233.06666666666666 912,244 C 1082.1333333333332,254.93333333333334 1261.0666666666666,227.46666666666667 1440,200 C 1440,200 1440,400 1440,400 Z"
+              );
+            }
+            25% {
+              d: path(
+                "M 0,400 C 0,400 0,200 0,200 C 136.13333333333333,219.60000000000002 272.26666666666665,239.20000000000002 417,225 C 561.7333333333333,210.79999999999998 715.0666666666666,162.79999999999998 887,153 C 1058.9333333333334,143.20000000000002 1249.4666666666667,171.60000000000002 1440,200 C 1440,200 1440,400 1440,400 Z"
+              );
+            }
+            50% {
+              d: path(
+                "M 0,400 C 0,400 0,200 0,200 C 114.93333333333334,190 229.86666666666667,180 409,196 C 588.1333333333333,212 831.4666666666667,254 1014,259 C 1196.5333333333333,264 1318.2666666666667,232 1440,200 C 1440,200 1440,400 1440,400 Z"
+              );
+            }
+            75% {
+              d: path(
+                "M 0,400 C 0,400 0,200 0,200 C 158.8,167.73333333333335 317.6,135.46666666666667 470,143 C 622.4,150.53333333333333 768.4000000000001,197.86666666666665 929,214 C 1089.6,230.13333333333335 1264.8,215.06666666666666 1440,200 C 1440,200 1440,400 1440,400 Z"
+              );
+            }
+            100% {
+              d: path(
+                "M 0,400 C 0,400 0,200 0,200 C 139.7333333333333,178.13333333333333 279.4666666666666,156.26666666666668 430,170 C 580.5333333333334,183.73333333333332 741.8666666666668,233.06666666666666 912,244 C 1082.1333333333332,254.93333333333334 1261.0666666666666,227.46666666666667 1440,200 C 1440,200 1440,400 1440,400 Z"
+              );
+            }
+          }
+        </style>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="5%" stop-color="#0693e3"></stop>
+            <stop offset="95%" stop-color="#033a80"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          d="M 0,400 C 0,400 0,200 0,200 C 139.7333333333333,178.13333333333333 279.4666666666666,156.26666666666668 430,170 C 580.5333333333334,183.73333333333332 741.8666666666668,233.06666666666666 912,244 C 1082.1333333333332,254.93333333333334 1261.0666666666666,227.46666666666667 1440,200 C 1440,200 1440,400 1440,400 Z"
+          stroke="none"
+          stroke-width="0"
+          fill="url(#gradient)"
+          fill-opacity="1"
+          class="transition-all duration-300 ease-in-out delay-150 path-0"
+        ></path>
+      </svg>
     </div>
     <!-- Javascript -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

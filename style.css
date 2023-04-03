@@ -129,6 +129,7 @@ header.shadow {
 .hero-text {
   font-size: 3rem;
   font-weight: 800;
+  animation: fadeAndMove 0.5s linear;
 }
 .hero-subtext {
   font-size: 1rem;
@@ -193,6 +194,7 @@ header.shadow {
   color: #fff;
   padding: 14px;
   border: none;
+  font-size: 1rem;
 }
 
 .btn-rounded {
@@ -217,6 +219,7 @@ header.shadow {
   text-align: center;
   height: 350px;
   border-radius: 25px;
+  transition: 0.3s transform;
 }
 .pricing-card .course {
   font-weight: normal;
@@ -225,7 +228,9 @@ header.shadow {
 }
 
 .card-selected {
+  transform: translateY(-10px);
   border: 4px solid #2169e7;
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.592);
   position: relative;
 }
 .card-selected::before {
@@ -267,6 +272,7 @@ header.shadow {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: relative;
 }
 span {
   font-size: 1.1rem;
@@ -275,13 +281,66 @@ span {
 
 form input {
   padding: 15px;
+  padding-left: 40px;
   width: 100%;
-  border: 2px solid #2169e7;
+  /* border: 2px solid #2169e7; */
+  border: none;
   outline: none;
-  background: hsla(260, 100%, 44%, 0.1);
+  font-size: 1rem;
+  background-color: #216ae71f;
 
   margin-bottom: 1rem;
   color: #71acfa;
+}
+form .bx {
+  position: absolute;
+  font-size: 1.2rem;
+  color: #2169e7;
+}
+
+.bx-envelope {
+  top: 15px;
+  left: 10px;
+}
+
+.bx-user {
+  top: 80px;
+  left: 10px;
+}
+
+.bx-lock {
+  bottom: 79px;
+  left: 10px;
+}
+
+form input::placeholder {
+  color: #4484f3ac;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  bottom: 70px;
+  cursor: pointer;
+}
+.eye svg {
+  color: #fff;
+  fill: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 11px;
+  left: 0;
+  width: 100%;
+  transform: rotate(45deg);
+  height: 2px;
+  background-color: #fff;
+
+  animation: fullWidth 0.3s;
 }
 
 .footer {
@@ -298,14 +357,8 @@ form input {
 }
 
 .copyright {
-  padding: 20px;
-  background: var(--main-color);
   text-align: center;
   color: #fff;
-}
-
-.copyright a {
-  color: #22cf91;
 }
 
 /* For Mobile */
@@ -341,6 +394,17 @@ form input {
   .course-card {
     width: 80%;
   }
+  div.copyright::after {
+    font-size: 0.8rem;
+    bottom: 10px;
+  }
+}
+.container {
+  transition: 0.3s ease-in-out;
+}
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 @media (max-width: 881px) {
@@ -383,7 +447,7 @@ form input {
   .navbar a {
     padding: 1.5rem;
     display: block;
-    background: var(--bg-color);
+    background-color: #0f0c27;
   }
 
   #darkmode {
@@ -562,14 +626,26 @@ span {
 }
 
 .copyright {
-  padding: 20px;
-  background: var(--main-color);
   text-align: center;
   color: #fff;
+  position: relative;
 }
-
-.copyright a {
-  color: #22cf91;
+.copyright::after {
+  position: absolute;
+  content: "© TechnoMind | All rights reserved!";
+  display: block;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.copyright::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  bottom: 0px;
+  height: 10px;
+  background: linear-gradient(90deg, #0693e3, #033a80);
 }
 
 /* For Mobile */
@@ -624,7 +700,6 @@ span {
   .navbar a {
     padding: 1.5rem;
     display: block;
-    background: var(--bg-color);
   }
 
   #darkmode {
@@ -656,5 +731,37 @@ span {
   .hero-text-container h2 {
     font-size: 3rem;
     font-weight: 700;
+  }
+}
+
+@keyframes fadeAndMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeAndMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fullWidth {
+  0% {
+    /* height: 0; */
+    transform: rotate(45deg) scale(0);
+  }
+  100% {
+    /* height: 2px; */
+    transform: rotate(45deg) scale(1);
   }
 }
